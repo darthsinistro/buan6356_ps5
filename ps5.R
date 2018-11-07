@@ -43,6 +43,12 @@ model1 <- lm(sat~income,data=dtable[group==1])
 model2 <- lm(sat~income,data=dtable[group==2])
 model3 <- lm(sat~income,data=dtable[group==3])
 
+coef(pooled)
+coef(within)
+coef(model1)
+coef(model2)
+coef(model3)
+
 summary(pooled)
 summary(within)
 summary(model1)
