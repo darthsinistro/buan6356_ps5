@@ -26,3 +26,10 @@ png("bth.png", res=80, height=1500, width=4000)
 plot(bthtree)
 dev.off()
 
+# Question 5.1.d
+
+# Out of the 3 models I ran: sat~income+group,sat~income|group and sat~group|income, sat~income|group has the highest negative log-likelihood of 7968.911.
+
+library(partykit)
+glmtree(sat~income|group, data=dtable)
+
